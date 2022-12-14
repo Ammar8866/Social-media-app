@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iBook</title>
+    <link rel="icon" type="image/x-icon" href="face.png" > 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css"
+    />
+    <link rel="stylesheet" href="iBook.css">
+    <script src="https://kit.fontawesome.com/c7693001a6.js" crossorigin="anonymous"></script>
+    <script src="iBook.js" defer> </script>
+</head>
+<body>
+  <!---------------------------- HEADER navigation bar------------------------ -->
+    <header>
+    <nav>
+        <div class="navigation">
+            <div class="logo">
+              <i class="fa-regular fa-face-grin-wide"></i>
+              <a class="no-underline" href="#">
+                iBook
+              </a>
+            </div>
+
+            <div class="navigation-search-container">
+              <i class="fa fa-search"></i>
+              <input class="search-field" type="text" placeholder="Search" id="searchid">
+              <button type="button" class="seabtn" ><span><i class="fa-solid fa-magnifying-glass"></i></span></button>
+            </div>
+
+            <div class="navigation-icons">
+              <a href="https://instagram.com" target ="_blank" class="navigation-link">
+                <i class="far fa-compass"></i>
+              </a>
+
+              <a class="navigation-link">
+                <i class="far fa-heart"></i>
+              </a>
+
+              <a href="https://instagram.com" class="navigation-link">
+                <i class="far fa-user-circle"></i>
+              </a>
+
+              <a href="file:///C:/Trainee%20PF/social%20media%20app/login.html" onclick="Logout()" id="signout" class="navigation-link">
+                <i class="fas fa-sign-out-alt"></i>
+              </a>
+            </div>
+          </div>
+          
+          <!-- scroll down test--->
+          <!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
+          <!-- scroll down test--->
+
+    </nav>
+    </header>
+    <!----------------------------------------- Header End--------------------------------------------- -->
+
+
+
+
+
+    <!-- -----------------------------------------Main Page------------------------------------------ -->
+<main>
+    <div class="container">
+
+      <!-- --------------------------------------Left Side Bar-------------------------------------- -->
+      <!-- -------------------------------------------DIV 1------------------------------------------ -->
+      <div class="left">
+
+        <!-- ------------------------Profile with Menus------------- -->
+          <a class="profile">
+              <div class="profile-pic">
+                <img src="./main-img/1.jpeg">
+              </div>
+              <div class="handle">
+                  <h4>Ammar Zaidi</h4>
+                  <p class="text-muted">@ammarzaidi</p>
+              </div>
+          </a>
+          <!-- -----------------------LEFT SIDE BAR MENU-------------------------- -->
+          <div class="sidebar">
+            <a class="menu-item active">
+              <span><i class="uil uil-home"></i></span> <h3>Home</h3>
+            </a>
+            <a class="menu-item ">
+              <span><i class="uil uil-compass"></i></span> <h3>Explore</h3>
+            </a>
+
+            <!-- ---------------------Notification menu with pop up messages---------- -->
+            <a class="menu-item" id="notifications">
+              <span><i class="uil uil-bell"><small class="notification-count">9+</small></i></span> <h3>Notifications</h3>
+              <div class="notifications-popup" onclick="Notification1()">
+                  <div>
+                      <div class="profile-pic">
+                          <img src="main-img/pexels-ali-madad-sakhirani-1211588.jpg" >
+                      </div>
+                      <div class="notification-body">
+                          <b>Nouman Bhatti</b> accepted your friend request
+                          <small class="text-muted">2 DAYS AGO</small>
+                      </div>
+                  </div>
+                  <div>
+                      <div class="profile-pic">
+                          <img src="main-img/seyed-erfan-mosuavi-50T9nUtHh2E-unsplash.jpg" >
+                      </div>
+                      <div class="notification-body">
+                          <b>Faizan Qadri</b> commented on your post
+                          <small class="text-muted">1 HOUR AGO</small>
+                      </div>
+                  </div>
+                  <div>
+                      <div class="profile-pic">
+                          <img src="main-img/pexels-yogendra-singh-1760900.jpg" >
+                      </div>
+                      <div class="notification-body">
+                          <b>Maussam Ali</b> and 210 other liked your post
+                          <small class="text-muted">4 MINUTES AGO</small>
+                      </div>
+                  </div>
+                  <div>
+                      <div class="profile-pic">
+                          <img src="main-img/pexels-yogendra-singh-1438467.jpg" >
+                      </div>
+                      <div class="notification-body">
+                          <b>Wilson Fisk</b> started following you
+                          <small class="text-muted"> 11 HOURS AGO</small>
+                      </div>
+                  </div>
+              </div>
+            </a>
+
+            <a class="menu-item" id="messages-notifications">
+                <i class="uil uil-envelope"><small class="notification-count">6</small></i></span><h3>Messages</h3>
+            </a>
+            <a class="menu-item ">
+              <span><i class="uil uil-bookmark"></i></span> <h3>Bookmarks</h3>
+            </a>
+            <a class="menu-item ">
+              <span><i class="uil uil-analytics"></i></span> <h3>Analytics</h3>
+            </a>
+            <a class="menu-item ">
+              <span><i class="uil uil-palette"></i></span> <h3>Theme</h3>
+            </a>
+            <a class="menu-item ">
+              <span><i class="uil uil-setting"></i></span> <h3>Settings</h3>
+            </a>
+            
+            <label class="btn btn-primary" for="create-post">Create Post</label>
+        </div>
+      </div>
+      
+
+
+
+
+
+<!-- -----------------------------------MIDDLE BAR POST PAGE--------------------------------------------  -->
+<!-- ----------------------------------------DIV 2--------------------------------------------------- -->
+
+      <div class="middle">
+
+        <!-- ------------------------------Stories portion------------------------------------------- -->
+        <div class="stories">
+            <div class="story">
+                <div class="profile-pic">
+                    <img src="main-img/1.jpeg" alt="">
+                </div>
+                <p class="name">Your Story</p>
+            </div>
+            <div class="story">
+                <div class="profile-pic">
+                    <img src="main-img/pexels-mohamed-abdelghaffar-922963.jpg" alt="">
+                </div>
+                <p class="name">Ammar Zaidi</p>
+            </div>
+            <div class="story">
+                <div class="profile-pic">
+                    <img src="main-img/austin-wade-d2s8NQ6WD24-unsplash.jpg" alt="">
+                </div>
+                <p class="name">Ali Abbas</p>
+            </div>
+            <div class="story">
+                <div class="profile-pic">
+                    <img src="main-img/pexels-atef-khaled-1808398.jpg" alt="">
+                </div>
+                <p class="name">Zain Hussain</p>
+            </div>
+            <div class="story">
+                <div class="profile-pic">
+                    <img src="main-img/pexels-ali-madad-sakhirani-1254476.jpg" alt="">
+                </div>
+                <p class="name">Faizan Ali</p>
+            </div>
+            <div class="story">
+                <div class="profile-pic">
+                    <img src="main-img/pexels-raul-reynoso-1018911.jpg" alt="">
+                </div>
+                <p class="name">Hafiz Naurhan</p>
+            </div>
+        </div>
+
+        <!----------------------------------Create Post section----------------------------  -->
+
+        <form class="create-post">
+            <div class="profile-pic">
+                <img src="main-img/1.jpeg" alt="">
+            </div>
+            <input type="text" placeholder="What's on your mind Ammar?" id="create-post">
+            <input type="submit" value="Post" class="btn btn-primary">
+        </form>
+
+        <!-- ------------------------------New-Feeds-Section-------------------------------- -->
+
+        <div class="feeds" id="feeds">
+        
+           <!-- -----------------------News Feed-1------------------- -->
+             <div class="feed"> 
+                <div class="head"></div>
+                 <div class="user">
+                     <div class="profile-pic">
+                         <img src="main-img/1.jpeg" alt="">
+                     </div>
+                     <div class="info">
+                         <h3>Ammar Zaidi</h3>
+                         <small>Lahore, 15 MINUTES AGO</small>
+                     </div >
+                     <SPAN class="edit"><i class="uil uil-ellipsis-h"></i></SPAN>
+                 </div>
+
+                 <div class="photo">
+                     <img src="main-img/2.jpeg" alt="">
+                 </div>
+
+                 <div class="action-button">
+                     <div class="interaction-button">
+                         <span><i class="uil uil-thumbs-up"></i></span>
+                         <span><i class="uil uil-comment" onclick="Commentbtn()" type="submit" value="Comment" ></i></span>
+                         <span><i class="uil uil-share"></i></span>
+                     </div>
+                     <div class="bookmark">
+                         <span><i class="uil uil-bookmark"></i></span>
+                     </div>
+                 </div>
+
+                 <div class="liked-by">
+                     <span><img src="main-img/austin-wade-d2s8NQ6WD24-unsplash.jpg"></span>
+                     <span><img src="main-img/pexels-abhishek-gaurav-829552.jpg"></span>
+                     <span><img src="main-img/pexels-ali-madad-sakhirani-1211588.jpg"></span>
+                     ,<p>Liked by <b>Abdul Rehman</b> and <b>220 others</b></p>
+                 </div>
+
+                 <div class="caption">
+                     <p><b>Ammar Zaidi</b>When you #Choose,Try to #Choose the Right One. ❤️
+                    <span class="hash-tag">#lifestyle</span></p>
+                 </div>
+                 <div class="comments text-muted">View all 830 comments</div>
+            </div> 
+
+             <!-- -----------------------News Feed-2------------------- -->
+        
+            <!-- <div class="feed">
+                <div class="head">
+                    
+                </div>
+                 <div class="user">
+                     <div class="profile-pic">
+                         <img src="main-img/austin-wade-d2s8NQ6WD24-unsplash.jpg" alt="">
+                     </div>
+                     <div class="info">
+                         <h3>Usman Ali</h3>
+                         <small>Pakistan, 1 HOUR AGO</small>
+                     </div >
+                     <SPAN class="edit"><i class="uil uil-ellipsis-h"></i></SPAN>
+                 </div>
+
+                 <div class="photo">
+                     <img src="main-img/pexels-abhishek-gaurav-829552.jpg" alt="">
+                 </div>
+
+                 <div class="action-button">
+                     <div class="interaction-button">
+                         <span><i class="uil uil-thumbs-up"></i></span>
+                         <span><i class="uil uil-comment"></i></span>
+                         <span><i class="uil uil-share"></i></span>
+                     </div>
+                     <div class="bookmark">
+                         <span><i class="uil uil-bookmark"></i></span>
+                     </div>
+                 </div>
+
+                 <div class="liked-by">
+                     <span><img src="main-img/2.jpeg"></span>
+                     <span><img src="main-img/1.jpeg"></span>
+                     <span><img src="main-img/pexels-chloe-1043474.jpg"></span>
+                     ,<p>Liked by <b>Ammar Zaidi</b>and <b>188 others</b></p>
+                 </div>
+
+                 <div class="caption">
+                     <p><b>Usman Ali</b>!Hey Whats up?
+                    <span class="hash-tag">#lifestyle</span></p>
+                 </div>
+                 <div class="comments text-muted">View all 40 comments</div>
+            </div> -->
+
+        </div>
+      </div>
+
+
+
+
+
+
+<!--------------------------------------RIGHT MESSAGE THIRD BAR---------------------------------  -->
+<!-- -----------------------------------------DIV 3----------------------------------------------- -->
+      
+      <div class="right">
+        <!-- ---------------------------------Messages----------------------------------------- -->
+          <div class="messages">
+            <div class="heading">
+                <h4>Messages</h4>
+                <span><i class="uil uil-edit"></i></span>
+            </div>
+            <!-- ------------Search Bar---------- -->
+
+            <div class="search-bar">
+                <span><i class="uil uil-search"></i></span>
+                <input type="search" placeholder="Search Messages" id="message-search">
+            </div>
+            <!-----Request & Primary CATEGORIES---->
+
+            <div class="category">
+                <h6 class="active">Primary</h6>
+                <h6>General</h6>
+                <h6 class="message-requests">Requests(7)</h6>
+            </div>
+            <!-- ------------Messages--------- -->
+            <div class="message">
+                <div class="profile-pic">
+                    <img src="main-img/pexels-ali-madad-sakhirani-1254476.jpg">
+                    <div class="active"></div>
+                </div>
+                <div class="message-body">
+                    <h5>Asad Shah</h5>
+                    <p class="text-muted">Just woke up bruh..</p>
+                </div>
+            </div>                             
+            <div class="message">
+                <div class="profile-pic">
+                    <img src="main-img/pexels-ali-madad-sakhirani-1315741.jpg">
+                    <div class="active"></div>
+                </div>
+                <div class="message-body">
+                    <h5>Ali Haider</h5>
+                    <p class="text-bold">2 New Messages</p>
+                </div>
+            </div>                             
+            <div class="message">
+                <div class="profile-pic">
+                    <img src="main-img/pexels-atef-khaled-1808398.jpg">
+                </div>
+                <div class="message-body">
+                    <h5>Zain Ali</h5>
+                    <p class="text-muted">Lol u right</p>
+                </div>
+            </div>                             
+            <div class="message">
+                <div class="profile-pic">
+                    <img src="main-img/pexels-rahul-shah-904124.jpg">
+                </div>
+                <div class="message-body">
+                    <h5>Hussain Zaidi</h5>
+                    <p class="text-bold">Birthday tomorrow!!</p>
+                </div>
+            </div>                             
+            <div class="message">
+                <div class="profile-pic">
+                    <img src="main-img/pexels-ashutosh-sonwani-1580143.jpg">
+                </div>
+                <div class="message-body">
+                    <h5>Zeeshan Haider</h5>
+                    <p class="text-muted">How are you?</p>
+                </div>
+            </div>                             
+            <div class="message">
+                <div class="profile-pic">
+                    <img src="main-img/pexels-raul-reynoso-1018911.jpg">
+                    <div class="active"></div>
+                </div>
+                <div class="message-body">
+                    <h5>Mahnoor Qureshi</h5>
+                    <p class="text-bold">3 New Messages</p>
+                </div>
+            </div>                                                        
+        </div>
+
+<!-- -----------------------------Friend Requests Portion-------------------------------->
+        <div class="friend-requests">
+            <h4>Requests</h4>
+            <!-- ----Request 1---- -->
+            <div class="request">
+                <div class="info">
+                    <div class="profile-pic">
+                        <img src="main-img/pexels-mohamed-abdelghaffar-922963.jpg">
+                    </div>
+                    <div>
+                        <h5>Hassan Zaidi</h5>
+                        <p class="text-muted">8 mutual friends</p>
+                        
+                    </div>
+                </div>
+                <div class="action">
+                    <button class="btn btn-primary">Accept</button>
+                    <button class="btn">Decline</button>
+                </div>
+            </div>
+            <!-- ----Request 2---- -->
+            <div class="request">
+                <div class="info">
+                    <div class="profile-pic">
+                        <img src="main-img/seyed-erfan-mosuavi-50T9nUtHh2E-unsplash.jpg">
+                    </div>
+                    <div>
+                        <h5>Ghulam Abbas</h5>
+                        <p class="text-muted">2 mutual friends</p>
+                        
+                    </div>
+                </div>
+                <div class="action">
+                    <button class="btn btn-primary">Accept</button>
+                    <button class="btn">Decline</button>
+                </div>
+            </div>
+            <!-- ----Request 3---- -->
+            <div class="request">
+                <div class="info">
+                    <div class="profile-pic">
+                        <img src="main-img/pexels-atef-khaled-1808398.jpg">
+                    </div>
+                    <div>
+                        <h5>Shahzaib malik</h5>
+                        <p class="text-muted">1 mutual friend</p>
+                        
+                    </div>
+                </div>
+                <div class="action">
+                    <button class="btn btn-primary">Accept</button>
+                    <button class="btn">Decline</button>
+                </div>
+            </div>
+      </div> 
+      </div>
+  </div>
+</main>
+</body>
+</html>
