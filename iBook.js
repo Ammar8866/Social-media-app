@@ -1,5 +1,5 @@
 // -----------LOGIN FETCH DATA FROM API----------------
-// ----------Button with id myBt-------------
+// ----------Button with id myBt-----------------------
 let username = document.getElementById("username");
 let password = document.getElementById("password");
 
@@ -140,7 +140,7 @@ async function Post() {
 
 // ---------------------SEARCH USER POST---------------------------
 // -------------------------------------------------------------
-const searchbutton = document.getElementsByClassName("seabtn");
+const searchbutton = document.getElementById("btnsearch");
 console.log(searchbutton);
 const searchtext = document.getElementById("searchid");
 console.log(searchtext);
